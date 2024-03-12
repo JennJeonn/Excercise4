@@ -7,34 +7,41 @@
 </head>
 <body>
     <script>
-          function ilyjesus(a, b, c){
-            if(isNan(a), isNan(b), isNan(c)){
-            window.alert("This is not a valid input");
-            return;
-            }
-        }
-        
-        function determineTriangle(a, b, c){
-            if (a == b && b == c && c == a) {
-            window.alert("The triangle is EQUILATERAL");
-        } else if (a == b || b == c || c == a) {
-            window.alert("The triangle is ISOSCELES");
-        } else {
-            window.alert("The triangle is SCALENE");
-        }
-        }
-        
 
-        function main(){
         var a = prompt("Enter the value for a: ");
         var b = prompt("Enter the value for b: ");
         var c = prompt("Enter the value for c: ");
-         
-        var z = ilyjesus(a, b, c);
-        var s = determineTriangle(a, b, c);
-        }
 
-        main();  
+        var yes = ilyjesus(a,b,c);
+        
+          function ilyjesus(a, b, c){
+            if(isNaN(a), isNaN(b), isNaN(c)){
+            window.alert("This is not a valid input");
+            }
+            else{
+                var z = determineTriangle(a, b, c);
+                function determineTriangle(a, b, c){
+                    if (a == b && b == c && c == a) {
+                        window.alert("The triangle is EQUILATERAL");
+                    } 
+                    else if (a == b || b == c || c == a) {
+                        window.alert("The triangle is ISOSCELES");
+            } 
+                    else {
+                        window.alert("The triangle is SCALENE");
+            }
+        }
+            }
+        }
+        
+        
+        
+
+
+         
+        
+    
+
     </script>
 </body>
 </html>
